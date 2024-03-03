@@ -31,7 +31,7 @@ input[type="text"] {
 }
 
 input[type=text]:focus {
-    outline: none;
+    outline: 1px solid;
 }
 
 button {
@@ -46,6 +46,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    outline: solid;
 }
 
 button:active {
@@ -77,4 +78,35 @@ input[type=checkbox] {
 
 label {
     padding: 0 1rem;
+}
+
+
+.container {
+    max-width: 1200px;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+p {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    border-bottom: 1px solid darkslateblue;
 }

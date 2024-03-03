@@ -8,6 +8,7 @@ function App() {
 
   let userid = localStorage.getItem('userid');
 
+
   useEffect(() => {
     if (!userid) {
       createUser();
@@ -17,12 +18,13 @@ function App() {
   }, []);
 
   async function createUser() {
-    const res = await fetch('/.netlify/functions/api', {
-      method: 'PUT',
-    });
-    const response = await res.json();
-    const usr = response.usr;
-    localStorage.setItem('userid', usr)
+
+    //const res = await fetch('/.netlify/functions/api', {
+    //  method: 'PUT',
+    //});
+    //const response = await res.json();
+    //const usr = response.usr;
+    //localStorage.setItem('userid', usr)
   }
 
   async function fecthTodo() {
